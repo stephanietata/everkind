@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en-AU"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Life Stories — EverKind</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-tertiary-fixed-variant": "#514600",
+          "outline": "#796889",
+          "on-background": "#211B27",
+          "tertiary-fixed": "#FFF5A8",
+          "outline-variant": "#D7CAE4",
+          "secondary": "#624785",
+          "on-error": "#ffffff",
+          "secondary-container": "#EDE5F5",
+          "primary": "#572482",
+          "surface-container": "#EFE8F6",
+          "on-primary-fixed-variant": "#573580",
+          "tertiary-container": "#F1E21C",
+          "on-tertiary-fixed": "#251E00",
+          "surface-container-high": "#E8E0F1",
+          "primary-fixed-dim": "#F1E365",
+          "primary-container": "#7541B0",
+          "on-primary-fixed": "#2D173B",
+          "tertiary-fixed-dim": "#EADD60",
+          "inverse-primary": "#E9D83D",
+          "tertiary": "#776400",
+          "surface-container-lowest": "#FFFFFF",
+          "on-secondary-container": "#47325E",
+          "surface-bright": "#FDFBFF",
+          "surface-variant": "#E1D7EC",
+          "on-tertiary-container": "#292047",
+          "on-primary": "#FFFFFF",
+          "on-surface-variant": "#4D4257",
+          "error-container": "#ffdad6",
+          "secondary-fixed-dim": "#D6C5E6",
+          "inverse-on-surface": "#F7F1FB",
+          "surface": "#FAF8FD",
+          "surface-container-low": "#F5F0FA",
+          "surface-dim": "#DDD5E8",
+          "surface-container-highest": "#E1D7EC",
+          "secondary-fixed": "#EDE2F7",
+          "on-secondary": "#FFFFFF",
+          "primary-fixed": "#FFF6B4",
+          "background": "#FAF8FD",
+          "on-tertiary": "#FFFFFF",
+          "inverse-surface": "#302438",
+          "on-primary-container": "#FFF56B",
+          "surface-tint": "#7541B0",
+          "error": "#ba1a1a",
+          "on-secondary-fixed-variant": "#514065",
+          "on-surface": "#211B27",
+          "on-secondary-fixed": "#251832",
+          "on-error-container": "#93000a"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin": "1.5rem",
+          "margin-desktop": "5rem",
+          "gutter-desktop": "2.5rem",
+          "margin-tablet": "3rem",
+          "gutter-tablet": "2rem",
+          "space-xl": "3.5rem",
+          "space-xs": "0.5rem",
+          "space-md": "1.25rem",
+          "gutter": "1.5rem",
+          "space-sm": "0.75rem",
+          "space-lg": "2rem"
+        },
+        "fontFamily": {
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md-mobile": [
+            "Newsreader"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Newsreader"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg-mobile": [
+            "Newsreader"
+          ],
+          "display-lg": [
+            "Newsreader"
+          ],
+          "body-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Newsreader"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Newsreader"
+          ],
+          "headline-sm": [
+            "Newsreader"
+          ]
+        },
+        "fontSize": {
+          "label-sm": [
+            "0.875rem",
+            {
+              "lineHeight": "1.375rem",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md-mobile": [
+            "1.625rem",
+            {
+              "lineHeight": "2.25rem",
+              "fontWeight": "500"
+            }
+          ],
+          "label-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.625rem",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "1rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "2.5rem",
+            {
+              "lineHeight": "3.25rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "1.125rem",
+            {
+              "lineHeight": "1.875rem",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg-mobile": [
+            "2.5rem",
+            {
+              "lineHeight": "3.125rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "3.5rem",
+            {
+              "lineHeight": "4.25rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-xl": [
+            "1.375rem",
+            {
+              "lineHeight": "2.125rem",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "2rem",
+            {
+              "lineHeight": "2.75rem",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "1.25rem",
+            {
+              "lineHeight": "2rem",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "2rem",
+            {
+              "lineHeight": "2.625rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-sm": [
+            "1.5rem",
+            {
+              "lineHeight": "2.125rem",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script><style id="everkind-polished-header">
+:root{--ek-purple:#7541b0;--ek-purple-deep:#54227f;--ek-yellow:#f1e21c;--ek-ink:#211b27;--ek-paper:#faf8fd;--ek-border:#e5ddee}
+html.ek-text-large{font-size:112.5%}html.ek-text-larger{font-size:125%}
+.ek-header{position:sticky;top:0;z-index:100;background:rgba(250,248,253,.97);border-bottom:3px solid var(--ek-yellow);box-shadow:0 5px 20px rgba(47,28,66,.08);backdrop-filter:blur(12px)}
+.ek-header-main{min-height:75px;max-width:1280px;margin:0 auto;padding:10px 40px;display:flex;align-items:center;gap:28px}
+.ek-brand{display:flex;align-items:center;flex:none;border-radius:3px;overflow:hidden}.ek-brand img{display:block;width:auto;height:45px;max-width:min(42vw,178px);object-fit:contain}
+.ek-local{margin-left:auto;display:flex;align-items:center;gap:9px;color:#65576f;font:600 12px/1.4 'Plus Jakarta Sans',Arial,sans-serif;white-space:nowrap}.ek-local-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ek-yellow);box-shadow:0 0 0 3px rgba(117,65,176,.1)}
+.ek-actions{display:flex;align-items:center;gap:12px}.ek-a11y,.ek-login,.ek-book,.ek-menu{min-height:44px;border-radius:8px;font:600 13px/1.2 'Plus Jakarta Sans',Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;cursor:pointer;text-decoration:none;transition:background .18s,color .18s,border-color .18s,transform .18s}
+.ek-a11y{padding:0 13px;background:#f1eaf8;border:1px solid #d8c8e9;color:#48266b}.ek-a11y:hover{background:#e8dcf4}.ek-a11y-symbol{font-weight:700;font-size:15px}.ek-login{padding:0 11px;color:#51475a}.ek-login:hover{text-decoration:underline;text-underline-offset:4px}.ek-book{min-height:48px;padding:0 19px;background:var(--ek-purple-deep);color:#fff;border:1px solid var(--ek-purple-deep);box-shadow:0 2px 5px rgba(52,29,78,.13)}.ek-book:hover{background:#6a369e;transform:translateY(-1px)}.ek-menu{display:none;border:1px solid #d8c8e9;background:#f4eef9;color:#48266b;width:44px;padding:0;font-size:20px}
+.ek-nav{border-top:1px solid #eee8f5;background:#fff}.ek-nav-inner{max-width:1280px;min-height:42px;margin:0 auto;padding:0 34px;display:flex;align-items:center;justify-content:center;gap:clamp(18px,3vw,43px)}.ek-nav a{position:relative;min-height:42px;display:inline-flex;align-items:center;color:#554b5d;text-decoration:none;font:600 12px/1.35 'Plus Jakarta Sans',Arial,sans-serif;white-space:nowrap}.ek-nav a:hover,.ek-nav a:focus-visible{color:var(--ek-purple-deep)}.ek-nav a:after{content:"";position:absolute;left:0;right:100%;bottom:7px;height:2px;background:var(--ek-purple);transition:right .18s}.ek-nav a:hover:after,.ek-nav a:focus-visible:after{right:0}
+.ek-header a:focus-visible,.ek-header button:focus-visible{outline:3px solid var(--ek-purple);outline-offset:3px}
+@media(max-width:1000px){.ek-header-main{padding:9px 24px;gap:16px}.ek-local{font-size:11px}.ek-nav-inner{gap:clamp(13px,2vw,24px)}.ek-nav a{font-size:11px}.ek-book{padding:0 14px}}
+@media(max-width:760px){.ek-header-main{min-height:66px;padding:8px 16px;gap:10px}.ek-brand img{height:38px;max-width:39vw}.ek-local,.ek-login{display:none}.ek-actions{margin-left:auto;gap:7px}.ek-a11y{width:42px;min-height:42px;padding:0}.ek-a11y-label{display:none}.ek-book{min-height:42px;padding:0 11px;font-size:11px;gap:6px}.ek-menu{display:inline-flex;min-height:42px}.ek-nav{display:none;border-top:1px solid var(--ek-border)}.ek-nav.is-open{display:block}.ek-nav-inner{display:flex;flex-direction:column;align-items:stretch;gap:0;padding:4px 20px 10px}.ek-nav a{min-height:48px;border-bottom:1px solid #eee8f5;font-size:14px}.ek-nav a:last-child{border-bottom:0}.ek-nav a:after{display:none}}
+@media(prefers-reduced-motion:reduce){.ek-header *{scroll-behavior:auto;transition:none!important}}
+</style>
+</head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-full flex flex-col"><header class="ek-header">
+  <div class="ek-header-main">
+    <a class="ek-brand" href="index.html" aria-label="EverKind home"><img src="assets/everkind-logo.png" alt="EverKind — Kindness Close To Home" /></a>
+    <div class="ek-local"><span class="ek-local-dot"></span> Proudly starting in South Australia</div>
+    <div class="ek-actions">
+      <button class="ek-a11y" type="button" data-font-scale aria-label="Increase text size"><span class="ek-a11y-symbol">A+</span><span class="ek-a11y-label">Text size</span></button>
+      <a class="ek-login" href="family-dashboard.html">Log in</a>
+      <a class="ek-book" href="booking.html">Book a companion <span aria-hidden="true">↗</span></a>
+      <button class="ek-menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="everkind-navigation"><span aria-hidden="true">☰</span></button>
+    </div>
+  </div>
+  <nav class="ek-nav" id="everkind-navigation" aria-label="Main navigation"><div class="ek-nav-inner">
+    <a href="index.html#how-it-works">How it works</a><a href="index.html#companionship">Companionship</a><a href="life-stories.html">Life Stories</a><a href="family-dashboard.html">For families</a><a href="become-a-companion.html">Become a companion</a><a href="index.html#about-us">About us</a>
+  </div></nav>
+</header><main class="w-full pt-20 bg-background flex-1"><div class="flex flex-col w-full">
+<!-- Immersive Editorial Hero -->
+<section class="relative w-full -mt-20 overflow-hidden bg-surface-container-low">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center object-cover scale-105 filter brightness-[0.88] contrast-[0.98] transition-transform duration-1000 ease-out" data-alt="Warm sunlight on an Australian verandah in Adelaide, South Australia. An elegant senior woman with silver hair is laughing with a gentle young female companion over porcelain tea cups, surrounded by native eucalyptus, potted ferns, and soft terracotta morning light." style="background-image: url('https://images.pexels.com/photos/6148943/pexels-photo-6148943.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/65 to-surface-container-low/50 backdrop-blur-[2px]"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/50 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-36 pb-20 md:pt-44 md:pb-28">
+<div class="max-w-3xl flex flex-col items-start gap-space-md">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-container text-on-secondary-container shadow-sm">
+<span class="material-symbols-outlined text-[18px]">auto_stories</span>
+<span class="font-label-sm text-label-sm tracking-wide">The EverKind Oral History Initiative</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight leading-tight">
+          Some moments deserve to be remembered.
+        </h1>
+<p class="font-body-xl text-body-lg md:text-body-xl text-on-surface-variant max-w-2xl leading-relaxed">
+          Through gentle, structured conversations during regular companionship visits, EverKind helps older Australians preserve their memories, wisdom, and life journey for their children and grandchildren.
+        </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="min-h-[56px] px-8 py-3.5 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-xl shadow-md hover:bg-primary transition-all flex items-center gap-2 focus:outline-none" onclick="document.getElementById('pricing-section').scrollIntoView({behavior: 'smooth'})" type="button">
+<span>Start a Life Story for Mum or Dad</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<a class="min-h-[56px] px-6 py-3.5 bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-lg text-label-lg rounded-xl hover:bg-surface-container transition-all flex items-center gap-2 shadow-sm" data-path="book-a-companion" href="booking.html">
+<span class="material-symbols-outlined text-[20px] text-secondary">forum</span>
+<span>Book an Introductory Chat</span>
+</a>
+</div>
+<div class="flex items-center gap-6 pt-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[18px]">lock</span> Private Family Vault</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[18px]">menu_book</span> Australian Linen Keepsake</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[18px]">graphic_eq</span> Broadcast Quality Audio</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Dual-View Toggle Hub -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Curated Life Preservation</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-1">Explore the Experience</h2>
+</div>
+<!-- Segmented Tab Buttons -->
+<div class="inline-flex p-1.5 bg-surface-container rounded-2xl shadow-sm gap-1 self-start md:self-auto">
+<button class="px-5 py-3 rounded-xl font-label-md text-label-md transition-all flex items-center gap-2 bg-surface-container-lowest text-on-surface shadow-sm font-semibold" id="tab-btn-story" onclick="switchView('story')">
+<span class="material-symbols-outlined text-[20px] text-primary">history_edu</span>
+<span>Sample Story: Margaret's Journey</span>
+</button>
+<button class="px-5 py-3 rounded-xl font-label-md text-label-md transition-all flex items-center gap-2 text-on-surface-variant hover:text-on-surface font-medium" id="tab-btn-works" onclick="switchView('works')">
+<span class="material-symbols-outlined text-[20px] text-secondary">explore</span>
+<span>How Life Stories Works</span>
+</button>
+</div>
+</div>
+<!-- VIEW 1: SAMPLE STORY (MARGARET'S JOURNEY TIMELINE) -->
+<div class="flex flex-col gap-space-lg transition-opacity duration-300" id="view-sample-story">
+<!-- Story Profile Header Card -->
+<div class="w-full bg-surface-container-low rounded-2xl p-space-md md:p-space-lg shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative shrink-0">
+<img class="w-20 h-20 md:w-24 md:h-24 rounded-2xl object-cover shadow-sm" data-alt="High quality portrait of Margaret, an 82-year-old Australian grandmother with a radiant smile, delicate linen collar, and warm kind eyes against a sunny garden backdrop in South Australia." src="https://images.pexels.com/photos/6148943/pexels-photo-6148943.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" alt="An older East Asian woman sharing a joyful moment with family outdoors." />
+<div class="absolute -bottom-2 -right-2 bg-secondary text-on-secondary rounded-full p-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] block">verified</span>
+</div>
+</div>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-headline-md text-headline-md-mobile md:text-headline-md text-on-surface">Margaret Elizabeth Campbell</h3>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Born 1941</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Recorded across 6 gentle morning tea visits with companion Sarah in Unley, Adelaide.</p>
+</div>
+</div>
+<div class="flex items-center gap-3 self-stretch lg:self-auto justify-end">
+<div class="px-4 py-2 bg-surface-container rounded-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">mic</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface font-bold">14 Audio Vignettes</p>
+<p class="font-label-sm text-[0.75rem] text-on-surface-variant">Archived in FLAC &amp; MP3</p>
+</div>
+</div>
+<div class="px-4 py-2 bg-surface-container rounded-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-container text-[24px]">auto_stories</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface font-bold">164 Page Keepsake</p>
+<p class="font-label-sm text-[0.75rem] text-on-surface-variant">Printed in Melbourne</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Timeline -->
+<div class="relative pl-6 md:pl-10 space-y-12 before:absolute before:left-3 md:before:left-5 before:top-4 before:bottom-4 before:w-0.5 before:bg-outline-variant/60">
+<!-- 1948 Node: With Audio Visualizer Player -->
+<div class="relative group">
+<div class="absolute -left-6 md:-left-10 mt-1.5 w-6 h-6 md:w-7 md:h-7 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm ring-4 ring-surface">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-bright"></span>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-md md:p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+<div class="space-y-2 flex-1">
+<div class="flex items-center gap-3">
+<span class="font-headline-md text-headline-md text-primary font-serif">1948</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant">Age 7</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> Stirling, Adelaide Hills</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Childhood in the Adelaide Hills &amp; The Great Cherry Harvests</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+                    "Every November our small timber verandah smelled like warm cherry skins and rain on slate. Father would climb the tallow-wood ladder before dawn, and Mum kept cold ginger cordial in the cellar."
+                  </p>
+</div>
+<div class="w-full lg:w-72 shrink-0">
+<img class="w-full h-44 rounded-xl object-cover shadow-inner" data-alt="Vintage sepia toned family photograph from late 1940s of an Australian family on a wooden country verandah surrounded by native trees and orchards in South Australia." src="https://images.pexels.com/photos/15362909/pexels-photo-15362909.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200" alt="Portrait of an older Indian woman with a warm smile." />
+</div>
+</div>
+<!-- Audio Snippet Player (Interactive) -->
+<div class="mt-space-md p-4 rounded-xl bg-surface-container flex flex-col md:flex-row items-center gap-4">
+<button aria-label="Play Margaret's voice snippet" class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow hover:bg-primary-container transition-colors focus:outline-none" id="play-btn-1" onclick="toggleAudioSnippet('snippet-1', 'play-btn-1')">
+<span class="material-symbols-outlined text-[24px]" id="play-btn-icon-1">play_arrow</span>
+</button>
+<div class="w-full flex-1 space-y-1.5">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface">
+<span class="font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">record_voice_over</span>
+                      Margaret's Voice: "The Sunday Cordial Tradition"
+                    </span>
+<span class="text-on-surface-variant" id="audio-timer-1">0:48 / 1:32</span>
+</div>
+<!-- Responsive Audio Waveform SVG visualizer -->
+<div class="h-8 w-full flex items-end gap-1 px-1">
+<div class="w-1 bg-primary rounded-full h-3 transition-all duration-300"></div>
+<div class="w-1 bg-primary rounded-full h-5 transition-all duration-300"></div>
+<div class="w-1 bg-primary-container rounded-full h-7 transition-all duration-300"></div>
+<div class="w-1 bg-primary rounded-full h-4 transition-all duration-300"></div>
+<div class="w-1 bg-primary-container rounded-full h-6 transition-all duration-300"></div>
+<div class="w-1 bg-primary rounded-full h-8 transition-all duration-300"></div>
+<div class="w-1 bg-primary-container rounded-full h-5 transition-all duration-300"></div>
+<div class="w-1 bg-outline-variant rounded-full h-3"></div>
+<div class="w-1 bg-outline-variant rounded-full h-6"></div>
+<div class="w-1 bg-outline-variant rounded-full h-4"></div>
+<div class="w-1 bg-outline-variant rounded-full h-7"></div>
+<div class="w-1 bg-outline-variant rounded-full h-5"></div>
+<div class="w-1 bg-outline-variant rounded-full h-3"></div>
+<div class="w-1 bg-outline-variant rounded-full h-6"></div>
+<div class="w-1 bg-outline-variant rounded-full h-8"></div>
+<div class="w-1 bg-outline-variant rounded-full h-4"></div>
+<div class="w-1 bg-outline-variant rounded-full h-2"></div>
+<div class="w-1 bg-outline-variant rounded-full h-5"></div>
+<div class="w-1 bg-outline-variant rounded-full h-6"></div>
+<div class="w-1 bg-outline-variant rounded-full h-3"></div>
+<div class="w-1 bg-outline-variant rounded-full h-5"></div>
+<div class="w-1 bg-outline-variant rounded-full h-2"></div>
+<div class="w-1 bg-outline-variant rounded-full h-4"></div>
+</div>
+</div>
+<span class="hidden md:inline-block px-3 py-1 bg-surface-container-high text-on-surface-variant font-label-sm text-xs rounded-lg">High Fidelity Audio</span>
+</div>
+</div>
+</div>
+<!-- 1967 Node -->
+<div class="relative group">
+<div class="absolute -left-6 md:-left-10 mt-1.5 w-6 h-6 md:w-7 md:h-7 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-sm ring-4 ring-surface">
+<span class="w-2 rounded-full bg-surface-bright"></span>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-md md:p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+<div class="space-y-2 flex-1">
+<div class="flex items-center gap-3">
+<span class="font-headline-md text-headline-md text-secondary font-serif">1967</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant">Age 26</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">domain</span> Adelaide Bank, King William Street</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">First Desk on King William Street &amp; Ledger Days</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+                    Margaret was one of four young women assigned to ledger reconciliations. She recalls the tram bell outside the stone bank portico, taking coffee at the original arcade café, and buying her first green tailored wool suit.
+                  </p>
+<blockquote class="italic text-on-surface border-l-2 border-secondary pl-3 my-2 font-headline-sm text-base">
+                    "We didn't have computers. We had handwriting, heavy leather binders, and absolute precision."
+                  </blockquote>
+</div>
+<div class="w-full lg:w-72 shrink-0">
+<img class="w-full h-44 rounded-xl object-cover" data-alt="Mid-century black and white photograph of an elegant historic stone bank building and street scene along King William Street in Adelaide during the late 1960s." src="https://images.pexels.com/photos/15362909/pexels-photo-15362909.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200" alt="Portrait of an older Indian woman with a warm smile." />
+</div>
+</div>
+</div>
+</div>
+<!-- 1972 Node -->
+<div class="relative group">
+<div class="absolute -left-6 md:-left-10 mt-1.5 w-6 h-6 md:w-7 md:h-7 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container shadow-sm ring-4 ring-surface">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-bright"></span>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-md md:p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+<div class="space-y-2 flex-1">
+<div class="flex items-center gap-3">
+<span class="font-headline-md text-headline-md text-tertiary font-serif">1972</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant">Age 31</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">home</span> Unley, South Australia</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Wedding to Thomas &amp; Laying the Red Bricks of Unley</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+                    Married on a brisk September afternoon. Thomas had spent nine months hand-sanding the cedar doorframes of their cottage. The garden began with two lemon trees that still bear fruit in the backyard fifty years later.
+                  </p>
+</div>
+<div class="w-full lg:w-72 shrink-0">
+<img class="w-full h-44 rounded-xl object-cover" data-alt="A restored archival photograph of a happy 1970s bride and groom standing beside a classic South Australian sandstone cottage with climbing roses and warm afternoon sunshine." src="https://images.pexels.com/photos/7089170/pexels-photo-7089170.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" alt="Sarah Wilson, an EverKind companion." />
+</div>
+</div>
+</div>
+</div>
+<!-- 1985 Node -->
+<div class="relative group">
+<div class="absolute -left-6 md:-left-10 mt-1.5 w-6 h-6 md:w-7 md:h-7 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm ring-4 ring-surface">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-bright"></span>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-md md:p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-3 mb-2">
+<span class="font-headline-md text-headline-md text-primary font-serif">1985</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant">Age 44</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Raising Three Children &amp; The Community Kitchen</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl leading-relaxed">
+                David, Claire, and Simon filled the cottage with school sports, music rehearsals, and neighborhood dinners. Margaret initiated the Unley Community Kitchen garden, preserving fig preserves and heirloom tomato seeds.
+              </p>
+</div>
+</div>
+<!-- 2010 Node -->
+<div class="relative group">
+<div class="absolute -left-6 md:-left-10 mt-1.5 w-6 h-6 md:w-7 md:h-7 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-sm ring-4 ring-surface">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-bright"></span>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-md md:p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+<div class="space-y-2 flex-1">
+<div class="flex items-center gap-3">
+<span class="font-headline-md text-headline-md text-secondary font-serif">2010</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant">Age 69</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">navigation</span> The Red Centre &amp; Flinders Ranges</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">The Great Australian Caravan Road Trip</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+                    Eight weeks camping under the southern stars. From Wilpena Pound straight up to Uluru with Thomas in their beloved Toyota LandCruiser. Margaret kept an illustrated travel journal recording desert bird calls and campfire recipes.
+                  </p>
+</div>
+<div class="w-full lg:w-72 shrink-0">
+<img class="w-full h-44 rounded-xl object-cover" data-alt="Rich golden red outback landscape in Flinders Ranges South Australia with ghost gums, weathered ochre earth, and vast Australian twilight sky." src="https://images.pexels.com/photos/6148943/pexels-photo-6148943.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" alt="An older East Asian woman sharing a joyful moment with family outdoors." />
+</div>
+</div>
+</div>
+</div>
+<!-- Today Node -->
+<div class="relative group">
+<div class="absolute -left-6 md:-left-10 mt-1.5 w-6 h-6 md:w-7 md:h-7 rounded-full bg-primary-container flex items-center justify-center text-on-primary shadow-md ring-4 ring-surface">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</div>
+<div class="bg-surface-container-high rounded-2xl p-space-md md:p-space-lg shadow-sm">
+<div class="flex items-center gap-3 mb-2">
+<span class="font-headline-md text-headline-md text-primary-container font-serif">Today</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-bold">Six Grandchildren</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">A Living Legacy Held in Generous Hands</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl leading-relaxed">
+                Margaret now enjoys regular Tuesday visits with Sarah, reading back handwritten pages, tasting fresh lemon curd, and listening together to the newly digitized cassette tapes from her mother's 1930s piano recitals.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- VIEW 2: HOW IT WORKS (COLLAPSIBLE / SWITCHABLE) -->
+<div class="hidden flex-col gap-space-lg transition-opacity duration-300" id="view-how-it-works">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between h-full">
+<div>
+<div class="w-14 h-14 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px]">sentiment_satisfied</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Step 01</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1 mb-3">Gentle, Unhurried Conversations</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                No intimidating recording studios. Stories are shared across the kitchen table or garden verandah during normal companionship tea visits, at a pace comfortable for Mum or Dad.
+              </p>
+</div>
+<div class="pt-6 text-on-surface font-label-sm text-label-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+              Guided by trained, empathetic companions
+            </div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between h-full">
+<div>
+<div class="w-14 h-14 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px]">graphic_eq</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Step 02</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1 mb-3">Audio Preservation &amp; Transcription</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                We capture high-clarity voice recordings, filter ambient background noise gently, and transcribe the stories into warm, first-person narrative chapters that honor their natural voice.
+              </p>
+</div>
+<div class="pt-6 text-on-surface font-label-sm text-label-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+              Family reviews and edits every chapter draft
+            </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between h-full">
+<div>
+<div class="w-14 h-14 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px]">auto_stories</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Step 03</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1 mb-3">The Heirloom Keepsake Delivery</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                We scan cherished family photographs and bind the life narrative into two linen-bound hardcover volumes stamped with gold foil, paired with a private digital vault for relatives worldwide.
+              </p>
+</div>
+<div class="pt-6 text-on-surface font-label-sm text-label-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+              Archival acid-free paper built to last 100+ years
+            </div>
+</div>
+</div>
+<!-- FAQ Snippet Inside How it Works -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl shadow-sm">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">Frequently Asked Questions by Families</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">What if Mum has mild cognitive changes or memory gaps?</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Our companions are trained in compassionate reminiscence therapy techniques. We never quiz or test. We celebrate the sensory impressions, emotions, and treasured anecdotes that bring them joy.</p>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Can family members contribute old photos or questions?</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Absolutely. Families receive a dedicated portal to suggest favorite childhood themes, upload family photos, or submit gentle prompts for the companion to explore during morning tea.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tangible Artifacts Section -->
+<section class="w-full bg-surface-container-high py-space-xl">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="max-w-2xl mb-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Treasures for Generations</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-1">
+          Heirlooms Crafted to Endure
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Every Life Story package produces tangible, archival-grade artifacts that give your family immediate joy and future generations an unbreakable link to their roots.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Artifact 1: Linen Book -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative h-64 overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="Editorial close-up photograph of a bespoke hardbound coffee table biography book with sage green woven linen cover and embossed gold foil lettering reading Margaret: Memories &amp; Light, resting on an oak wooden table." src="https://images.pexels.com/photos/15362909/pexels-photo-15362909.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200" alt="Portrait of an older Indian woman with a warm smile." />
+<div class="absolute top-3 left-3 px-3 py-1 bg-surface/90 backdrop-blur rounded-full font-label-sm text-label-sm text-on-surface">
+              Archival Hardcover
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Hardcover Keepsake Book</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Hand-bound in Australian linen with debossed gold foil lettering. Printed on 170gsm heavyweight acid-free paper with restored family photos placed alongside Margaret's words.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-container flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Two full copies included</span>
+<span class="text-primary font-bold">Standard 150-200 pages</span>
+</div>
+</div>
+</div>
+<!-- Artifact 2: Audio Archive -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative h-64 overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="Close-up of a vintage timber-boxed USB drive alongside high quality over-ear wooden headphones and a smartphone displaying a clean soundwave waveform in an Australian interior." src="https://images.pexels.com/photos/7089170/pexels-photo-7089170.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" alt="Sarah Wilson, an EverKind companion." />
+<div class="absolute top-3 left-3 px-3 py-1 bg-surface/90 backdrop-blur rounded-full font-label-sm text-label-sm text-on-surface">
+              Acoustic Master
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Private Family Audio Vault</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Nothing matches the warmth of hearing Mum's distinctive cadence, laugh, and phrases. Studio-mastered audio files organized by life era and indexed for immediate listening on phones or computers.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-container flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Mastered lossless FLAC</span>
+<span class="text-secondary font-bold">Lifetime Cloud Storage</span>
+</div>
+</div>
+</div>
+<!-- Artifact 3: Cloud Sharing Link -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative h-64 overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="An adult daughter in London smiling as she holds a tablet computer displaying a multimedia family tree timeline with old photographs and voice memos from her parents in Australia." src="https://images.pexels.com/photos/6148943/pexels-photo-6148943.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" alt="An older East Asian woman sharing a joyful moment with family outdoors." />
+<div class="absolute top-3 left-3 px-3 py-1 bg-surface/90 backdrop-blur rounded-full font-label-sm text-label-sm text-on-surface">
+              Global Connection
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Private Family Link for Overseas Relatives</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Keep relatives in London, Toronto, or interstate intimately connected. A secure, invite-only web link that lets grandkids read chapters and stream voice vignettes anytime.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-container flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Bank-level encrypted</span>
+<span class="text-primary font-bold">Unlimited Family Access</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact for Life Stories pricing -->
+<section class="w-full bg-surface py-space-xl" id="pricing-section">
+  <div class="max-w-5xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+    <div class="rounded-3xl bg-surface-container-low p-8 md:p-12 text-center shadow-sm">
+      <span class="material-symbols-outlined text-secondary text-4xl" aria-hidden="true">volunteer_activism</span>
+      <p class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider mt-3">A story as unique as a life</p>
+      <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-2">Let’s talk about your Life Story</h2>
+      <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto mt-4">Every family’s story is different. Contact our team to talk through the memories you’d like to preserve and receive a price tailored to your needs.</p>
+      <a class="inline-flex items-center justify-center gap-2 min-h-[54px] px-7 py-3 mt-7 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-primary transition-colors" href="mailto:hello@everkind.com.au?subject=Life%20Stories%20pricing">Contact us for price <span class="material-symbols-outlined text-[20px]" aria-hidden="true">arrow_forward</span></a>
+    </div>
+  </div>
+</section>
+<!-- Bottom Final Conversion Banner -->
+<section class="w-full bg-secondary text-on-secondary py-space-xl">
+<div class="max-w-5xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop text-center flex flex-col items-center">
+<span class="px-4 py-1.5 rounded-full bg-surface-bright text-secondary font-label-sm text-label-sm font-bold shadow-sm mb-4">
+        Every Life is an Australian History
+      </span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-secondary max-w-2xl leading-tight">
+        Give your parents the gift of being truly heard.
+      </h2>
+<p class="font-body-xl text-body-lg md:text-body-xl text-surface-container mt-3 max-w-xl">
+        Talk with our Adelaide team today. We'll answer any questions and arrange a warm introductory visit with an accredited companion.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-4 mt-space-md">
+<a class="min-h-[56px] px-8 py-3.5 bg-surface-container-lowest text-on-surface hover:bg-surface-bright transition-colors rounded-xl font-label-lg text-label-lg shadow-md flex items-center gap-2" data-path="book-a-companion" href="booking.html">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_today</span>
+<span>Book an Introductory Chat</span>
+</a>
+<a class="min-h-[56px] px-6 py-3.5 bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed transition-colors rounded-xl font-label-lg text-label-lg flex items-center gap-2" href="tel:1300000000">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>Call (08) 8120 4400</span>
+</a>
+</div>
+<p class="font-label-sm text-label-sm text-surface-container mt-6">
+        No lock-in contracts · Full privacy guarantee · South Australian based team
+      </p>
+</div>
+</section>
+<!-- Embedded Vanilla JS for Interactive Elements -->
+<script>
+    // Tab View Switcher
+    function switchView(viewName) {
+      const storyView = document.getElementById('view-sample-story');
+      const worksView = document.getElementById('view-how-it-works');
+      const storyBtn = document.getElementById('tab-btn-story');
+      const worksBtn = document.getElementById('tab-btn-works');
+
+      if (viewName === 'story') {
+        storyView.classList.remove('hidden');
+        worksView.classList.add('hidden');
+        
+        // Active button styles
+        storyBtn.className = "px-5 py-3 rounded-xl font-label-md text-label-md transition-all flex items-center gap-2 bg-surface-container-lowest text-on-surface shadow-sm font-semibold";
+        worksBtn.className = "px-5 py-3 rounded-xl font-label-md text-label-md transition-all flex items-center gap-2 text-on-surface-variant hover:text-on-surface font-medium";
+      } else {
+        storyView.classList.add('hidden');
+        worksView.classList.remove('hidden');
+
+        // Active button styles
+        worksBtn.className = "px-5 py-3 rounded-xl font-label-md text-label-md transition-all flex items-center gap-2 bg-surface-container-lowest text-on-surface shadow-sm font-semibold";
+        storyBtn.className = "px-5 py-3 rounded-xl font-label-md text-label-md transition-all flex items-center gap-2 text-on-surface-variant hover:text-on-surface font-medium";
+      }
+    }
+
+    // Audio Snippet Toggle Simulation
+    let isPlaying = false;
+    let timerInterval = null;
+    let currentSeconds = 48;
+
+    function toggleAudioSnippet(snippetId, btnId) {
+      const icon = document.getElementById('play-btn-icon-1');
+      const timer = document.getElementById('audio-timer-1');
+      isPlaying = !isPlaying;
+
+      if (isPlaying) {
+        icon.textContent = 'pause';
+        timerInterval = setInterval(() => {
+          if (currentSeconds < 92) {
+            currentSeconds++;
+            const mins = Math.floor(currentSeconds / 60);
+            const secs = (currentSeconds % 60).toString().padStart(2, '0');
+            timer.textContent = `${mins}:${secs} / 1:32`;
+          } else {
+            currentSeconds = 0;
+          }
+        }, 1000);
+      } else {
+        icon.textContent = 'play_arrow';
+        clearInterval(timerInterval);
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_8px_rgba(0,0,0,0.03)] mt-space-xl"><div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl"><div class="flex flex-col md:flex-row md:items-start justify-between gap-space-lg pb-space-lg mb-space-lg"><div class="max-w-md"><div class="flex items-center gap-space-xs mb-space-sm"><img alt="EverKind Brand Logo" class="h-8 w-auto object-contain" src="assets/everkind-logo.png"/></div><p class="font-headline-md-mobile text-headline-md-mobile text-on-surface mb-space-xs italic">Meaningful time. Human connection.</p><p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span>Proudly starting in South Australia (Adelaide)</p></div><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm text-secondary px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">verified</span>Vetted Companions</span><span class="font-label-sm text-label-sm text-secondary px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">security</span>Police Checked</span></div></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg pb-space-xl"><div class="flex flex-col gap-space-sm"><h3 class="font-label-lg text-label-lg text-on-surface">Companionship &amp; Services</h3><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="companionship" href="index.html#companionship">Conversation</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="companionship" href="index.html#companionship">Walks &amp; Outings</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="companionship" href="index.html#companionship">Everyday Help</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="companionship" href="index.html#companionship">Technology Support</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="life-stories" href="life-stories.html">Life Stories</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-label-lg text-label-lg text-on-surface">For Families</h3><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="for-families" href="family-dashboard.html">Peace of Mind</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="family-dashboard" href="family-dashboard.html">Family Dashboard</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="for-families" href="family-dashboard.html">Visit Updates</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="trust-safety" href="index.html#trust-safety">Trust &amp; Safety</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="pricing" href="life-stories.html#pricing-section">Pricing</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-label-lg text-label-lg text-on-surface">Companions</h3><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="become-a-companion" href="become-a-companion.html">Become a Companion</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="screening-process" href="index.html#trust-safety">Screening Process</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="login" href="family-dashboard.html">Companion Login</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="trust-safety" href="index.html#trust-safety">Safety Standards</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-label-lg text-label-lg text-on-surface">About &amp; Support</h3><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="about-us" href="index.html#about-us">Our Story</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="adelaide-community" href="index.html#about-us">Adelaide Community</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="faqs" href="index.html#faqs">FAQs</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="contact-us" href="mailto:hello@everkind.com.au">Contact Us</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="accessibility" href="index.html#accessibility">Accessibility Commitment</a></li></ul></div></div><div class="bg-surface-container p-space-md rounded-xl mb-space-lg"><p class="font-body-md text-body-md text-on-surface-variant flex items-start gap-space-xs"><span class="material-symbols-outlined text-tertiary mt-0.5 shrink-0">info</span><span><strong>Important Care Notice:</strong> EverKind provides social companionship and practical everyday assistance, not clinical nursing or emergency medical care. In an emergency, please call 000 immediately.</span></p></div><div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pt-space-md text-on-surface-variant font-label-sm text-label-sm"><p>© 2025 EverKind Australia. All rights reserved.</p><div class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs"><a class="hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="privacy-policy" href="index.html#privacy-policy">Privacy Policy</a><a class="hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="terms-of-service" href="index.html#terms-of-service">Terms of Service</a><a class="hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="complaints-feedback" href="mailto:hello@everkind.com.au?subject=Feedback%20for%20EverKind">Plain English Complaints &amp; Feedback</a></div></div></div></footer><script id="everkind-accessibility-controls">
+(()=>{
+  const root=document.documentElement;
+  let size=0;
+  try{size=Number(localStorage.getItem('everkind-text-size')||0)}catch{}
+  if(!Number.isInteger(size)||size<0||size>2)size=0;
+  const apply=()=>{
+    root.classList.toggle('ek-text-large',size===1);
+    root.classList.toggle('ek-text-larger',size===2);
+    document.querySelectorAll('[data-font-scale]').forEach(button=>{
+      button.setAttribute('aria-pressed',String(size>0));
+      button.setAttribute('aria-label',size===2?'Reset text size':'Increase text size');
+      const label=button.querySelector('.ek-a11y-label');
+      if(label)label.textContent=size===0?'Text size':size===1?'Larger text':'Reset text';
+      button.title=size===0?'Increase text size':size===1?'Increase text size again':'Restore default text size';
+    });
+  };
+  apply();
+  document.querySelectorAll('[data-font-scale]').forEach(button=>button.addEventListener('click',()=>{
+    size=(size+1)%3;apply();
+    try{localStorage.setItem('everkind-text-size',String(size))}catch{}
+  }));
+  const menu=document.querySelector('.ek-menu');
+  const nav=document.querySelector('.ek-nav');
+  if(menu&&nav)menu.addEventListener('click',()=>{
+    const open=nav.classList.toggle('is-open');
+    menu.setAttribute('aria-expanded',String(open));
+    menu.setAttribute('aria-label',open?'Close navigation':'Open navigation');
+    menu.querySelector('span').textContent=open?'×':'☰';
+  });
+})();
+</script>
+</body></html>

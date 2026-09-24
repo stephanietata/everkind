@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en-AU"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Find a companion — EverKind</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-tertiary-fixed-variant": "#514600",
+          "outline": "#796889",
+          "on-background": "#211B27",
+          "tertiary-fixed": "#FFF5A8",
+          "outline-variant": "#D7CAE4",
+          "secondary": "#624785",
+          "on-error": "#ffffff",
+          "secondary-container": "#EDE5F5",
+          "primary": "#572482",
+          "surface-container": "#EFE8F6",
+          "on-primary-fixed-variant": "#573580",
+          "tertiary-container": "#F1E21C",
+          "on-tertiary-fixed": "#251E00",
+          "surface-container-high": "#E8E0F1",
+          "primary-fixed-dim": "#F1E365",
+          "primary-container": "#7541B0",
+          "on-primary-fixed": "#2D173B",
+          "tertiary-fixed-dim": "#EADD60",
+          "inverse-primary": "#E9D83D",
+          "tertiary": "#776400",
+          "surface-container-lowest": "#FFFFFF",
+          "on-secondary-container": "#47325E",
+          "surface-bright": "#FDFBFF",
+          "surface-variant": "#E1D7EC",
+          "on-tertiary-container": "#292047",
+          "on-primary": "#FFFFFF",
+          "on-surface-variant": "#4D4257",
+          "error-container": "#ffdad6",
+          "secondary-fixed-dim": "#D6C5E6",
+          "inverse-on-surface": "#F7F1FB",
+          "surface": "#FAF8FD",
+          "surface-container-low": "#F5F0FA",
+          "surface-dim": "#DDD5E8",
+          "surface-container-highest": "#E1D7EC",
+          "secondary-fixed": "#EDE2F7",
+          "on-secondary": "#FFFFFF",
+          "primary-fixed": "#FFF6B4",
+          "background": "#FAF8FD",
+          "on-tertiary": "#FFFFFF",
+          "inverse-surface": "#302438",
+          "on-primary-container": "#FFF56B",
+          "surface-tint": "#7541B0",
+          "error": "#ba1a1a",
+          "on-secondary-fixed-variant": "#514065",
+          "on-surface": "#211B27",
+          "on-secondary-fixed": "#251832",
+          "on-error-container": "#93000a"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin": "1.5rem",
+          "margin-desktop": "5rem",
+          "gutter-desktop": "2.5rem",
+          "margin-tablet": "3rem",
+          "gutter-tablet": "2rem",
+          "space-xl": "3.5rem",
+          "space-xs": "0.5rem",
+          "space-md": "1.25rem",
+          "gutter": "1.5rem",
+          "space-sm": "0.75rem",
+          "space-lg": "2rem"
+        },
+        "fontFamily": {
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md-mobile": [
+            "Newsreader"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Newsreader"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg-mobile": [
+            "Newsreader"
+          ],
+          "display-lg": [
+            "Newsreader"
+          ],
+          "body-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Newsreader"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Newsreader"
+          ],
+          "headline-sm": [
+            "Newsreader"
+          ]
+        },
+        "fontSize": {
+          "label-sm": [
+            "0.875rem",
+            {
+              "lineHeight": "1.375rem",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md-mobile": [
+            "1.625rem",
+            {
+              "lineHeight": "2.25rem",
+              "fontWeight": "500"
+            }
+          ],
+          "label-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.625rem",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "1rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "2.5rem",
+            {
+              "lineHeight": "3.25rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "1.125rem",
+            {
+              "lineHeight": "1.875rem",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg-mobile": [
+            "2.5rem",
+            {
+              "lineHeight": "3.125rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "3.5rem",
+            {
+              "lineHeight": "4.25rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-xl": [
+            "1.375rem",
+            {
+              "lineHeight": "2.125rem",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "2rem",
+            {
+              "lineHeight": "2.75rem",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "1.25rem",
+            {
+              "lineHeight": "2rem",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "2rem",
+            {
+              "lineHeight": "2.625rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-sm": [
+            "1.5rem",
+            {
+              "lineHeight": "2.125rem",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script><style id="everkind-polished-header">
+:root{--ek-purple:#7541b0;--ek-purple-deep:#54227f;--ek-yellow:#f1e21c;--ek-ink:#211b27;--ek-paper:#faf8fd;--ek-border:#e5ddee}
+html.ek-text-large{font-size:112.5%}html.ek-text-larger{font-size:125%}
+.ek-header{position:sticky;top:0;z-index:100;background:rgba(250,248,253,.97);border-bottom:3px solid var(--ek-yellow);box-shadow:0 5px 20px rgba(47,28,66,.08);backdrop-filter:blur(12px)}
+.ek-header-main{min-height:75px;max-width:1280px;margin:0 auto;padding:10px 40px;display:flex;align-items:center;gap:28px}
+.ek-brand{display:flex;align-items:center;flex:none;border-radius:3px;overflow:hidden}.ek-brand img{display:block;width:auto;height:45px;max-width:min(42vw,178px);object-fit:contain}
+.ek-local{margin-left:auto;display:flex;align-items:center;gap:9px;color:#65576f;font:600 12px/1.4 'Plus Jakarta Sans',Arial,sans-serif;white-space:nowrap}.ek-local-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ek-yellow);box-shadow:0 0 0 3px rgba(117,65,176,.1)}
+.ek-actions{display:flex;align-items:center;gap:12px}.ek-a11y,.ek-login,.ek-book,.ek-menu{min-height:44px;border-radius:8px;font:600 13px/1.2 'Plus Jakarta Sans',Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;cursor:pointer;text-decoration:none;transition:background .18s,color .18s,border-color .18s,transform .18s}
+.ek-a11y{padding:0 13px;background:#f1eaf8;border:1px solid #d8c8e9;color:#48266b}.ek-a11y:hover{background:#e8dcf4}.ek-a11y-symbol{font-weight:700;font-size:15px}.ek-login{padding:0 11px;color:#51475a}.ek-login:hover{text-decoration:underline;text-underline-offset:4px}.ek-book{min-height:48px;padding:0 19px;background:var(--ek-purple-deep);color:#fff;border:1px solid var(--ek-purple-deep);box-shadow:0 2px 5px rgba(52,29,78,.13)}.ek-book:hover{background:#6a369e;transform:translateY(-1px)}.ek-menu{display:none;border:1px solid #d8c8e9;background:#f4eef9;color:#48266b;width:44px;padding:0;font-size:20px}
+.ek-nav{border-top:1px solid #eee8f5;background:#fff}.ek-nav-inner{max-width:1280px;min-height:42px;margin:0 auto;padding:0 34px;display:flex;align-items:center;justify-content:center;gap:clamp(18px,3vw,43px)}.ek-nav a{position:relative;min-height:42px;display:inline-flex;align-items:center;color:#554b5d;text-decoration:none;font:600 12px/1.35 'Plus Jakarta Sans',Arial,sans-serif;white-space:nowrap}.ek-nav a:hover,.ek-nav a:focus-visible{color:var(--ek-purple-deep)}.ek-nav a:after{content:"";position:absolute;left:0;right:100%;bottom:7px;height:2px;background:var(--ek-purple);transition:right .18s}.ek-nav a:hover:after,.ek-nav a:focus-visible:after{right:0}
+.ek-header a:focus-visible,.ek-header button:focus-visible{outline:3px solid var(--ek-purple);outline-offset:3px}
+@media(max-width:1000px){.ek-header-main{padding:9px 24px;gap:16px}.ek-local{font-size:11px}.ek-nav-inner{gap:clamp(13px,2vw,24px)}.ek-nav a{font-size:11px}.ek-book{padding:0 14px}}
+@media(max-width:760px){.ek-header-main{min-height:66px;padding:8px 16px;gap:10px}.ek-brand img{height:38px;max-width:39vw}.ek-local,.ek-login{display:none}.ek-actions{margin-left:auto;gap:7px}.ek-a11y{width:42px;min-height:42px;padding:0}.ek-a11y-label{display:none}.ek-book{min-height:42px;padding:0 11px;font-size:11px;gap:6px}.ek-menu{display:inline-flex;min-height:42px}.ek-nav{display:none;border-top:1px solid var(--ek-border)}.ek-nav.is-open{display:block}.ek-nav-inner{display:flex;flex-direction:column;align-items:stretch;gap:0;padding:4px 20px 10px}.ek-nav a{min-height:48px;border-bottom:1px solid #eee8f5;font-size:14px}.ek-nav a:last-child{border-bottom:0}.ek-nav a:after{display:none}}
+@media(prefers-reduced-motion:reduce){.ek-header *{scroll-behavior:auto;transition:none!important}}
+</style>
+</head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-full flex flex-col"><header class="ek-header">
+  <div class="ek-header-main">
+    <a class="ek-brand" href="index.html" aria-label="EverKind home"><img src="assets/everkind-logo.png" alt="EverKind — Kindness Close To Home" /></a>
+    <div class="ek-local"><span class="ek-local-dot"></span> Proudly starting in South Australia</div>
+    <div class="ek-actions">
+      <button class="ek-a11y" type="button" data-font-scale aria-label="Increase text size"><span class="ek-a11y-symbol">A+</span><span class="ek-a11y-label">Text size</span></button>
+      <a class="ek-login" href="family-dashboard.html">Log in</a>
+      <a class="ek-book" href="booking.html">Book a companion <span aria-hidden="true">↗</span></a>
+      <button class="ek-menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="everkind-navigation"><span aria-hidden="true">☰</span></button>
+    </div>
+  </div>
+  <nav class="ek-nav" id="everkind-navigation" aria-label="Main navigation"><div class="ek-nav-inner">
+    <a href="index.html#how-it-works">How it works</a><a href="index.html#companionship">Companionship</a><a href="life-stories.html">Life Stories</a><a href="family-dashboard.html">For families</a><a href="become-a-companion.html">Become a companion</a><a href="index.html#about-us">About us</a>
+  </div></nav>
+</header><main class="w-full pt-20 bg-background flex-1"><div class="flex flex-col w-full">
+<!-- Warm Minimalist Hero Banner with Natural Storytelling -->
+<section class="relative w-full bg-surface-container-low overflow-hidden py-10 md:py-14">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm mb-4">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Vetted &amp; Police Checked Adelaide Companions</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-3 tracking-tight">
+            Find the right companion for someone you cherish
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            A thoughtful, unhurried matching process designed for comfort and safety. Answer a few gentle questions so we can pair your family with a trusted local friend.
+          </p>
+</div>
+<!-- Trust Guarantee Pill Card -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-md max-w-sm flex flex-col gap-3 shrink-0">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">lock</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">No Payment Upfront</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Review companion profiles completely free</p>
+</div>
+</div>
+<div class="h-px w-full bg-surface-container-high"></div>
+<div class="flex items-center justify-between text-xs text-secondary font-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span>Free initial call</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">support_agent</span>Adelaide support team</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive 6-Step Companion Booking Wizard -->
+<section class="w-full py-8 md:py-12 bg-background">
+<div class="max-w-5xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<!-- Stepper Status & Progress Bar -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 md:p-8 shadow-sm mb-8">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold" id="step-eyebrow">Step 1 of 6</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1" id="step-title-display">Who is this visit for?</h2>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant text-sm font-label-md">
+<span class="material-symbols-outlined text-[20px] text-secondary">schedule</span>
+<span>Takes ~3 minutes</span>
+</div>
+</div>
+<!-- Progress Indicator Track -->
+<div class="w-full bg-surface-container-high h-3 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full transition-all duration-500 ease-out" id="step-progress-bar" style="width: 16.66%;"></div>
+</div>
+<!-- Step Markers Desktop Labels -->
+<div class="hidden md:grid grid-cols-6 gap-2 mt-4 text-center font-label-sm text-xs">
+<span class="text-primary font-bold cursor-pointer" onclick="goToStep(1)">1. Recipient</span>
+<span class="text-on-surface-variant cursor-pointer hover:text-on-surface" onclick="goToStep(2)">2. Activities</span>
+<span class="text-on-surface-variant cursor-pointer hover:text-on-surface" onclick="goToStep(3)">3. Schedule</span>
+<span class="text-on-surface-variant cursor-pointer hover:text-on-surface" onclick="goToStep(4)">4. Frequency</span>
+<span class="text-on-surface-variant cursor-pointer hover:text-on-surface" onclick="goToStep(5)">5. Details</span>
+<span class="text-on-surface-variant cursor-pointer hover:text-on-surface" onclick="goToStep(6)">6. Matches</span>
+</div>
+</div>
+<!-- Form Content Container -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 md:p-10 shadow-sm relative min-h-[460px] flex flex-col justify-between">
+<!-- STEP 1: RECIPIENT -->
+<div class="wizard-step flex flex-col gap-6" id="step-1">
+<div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+              Please choose who will be enjoying companionship sessions. This helps us personalize conversational style and pacing.
+            </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Option: Myself -->
+<label class="cursor-pointer group">
+<input class="peer sr-only" name="recipient" type="radio" value="myself"/>
+<div class="min-h-[88px] p-5 rounded-2xl bg-surface-container-low peer-checked:bg-primary-fixed peer-checked:text-on-primary-fixed transition-all flex items-center justify-between shadow-xs hover:bg-surface-container">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">person</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm">Myself</h3>
+<p class="text-xs text-on-surface-variant peer-checked:text-on-primary-fixed">Looking for friendly company &amp; outing support</p>
+</div>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest flex items-center justify-center text-transparent peer-checked:text-primary peer-checked:bg-primary-container peer-checked:text-on-primary">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+</div>
+</label>
+<!-- Option: My Parent -->
+<label class="cursor-pointer group">
+<input checked="" class="peer sr-only" name="recipient" type="radio" value="parent"/>
+<div class="min-h-[88px] p-5 rounded-2xl bg-surface-container-low peer-checked:bg-primary-fixed peer-checked:text-on-primary-fixed transition-all flex items-center justify-between shadow-xs hover:bg-surface-container">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">diversity_1</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm">My Mother or Father</h3>
+<p class="text-xs text-on-surface-variant peer-checked:text-on-primary-fixed">Support for my mum or dad living in Adelaide</p>
+</div>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest flex items-center justify-center text-transparent peer-checked:text-on-primary peer-checked:bg-primary-container">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+</div>
+</label>
+<!-- Option: My Grandparent -->
+<label class="cursor-pointer group">
+<input class="peer sr-only" name="recipient" type="radio" value="grandparent"/>
+<div class="min-h-[88px] p-5 rounded-2xl bg-surface-container-low peer-checked:bg-primary-fixed peer-checked:text-on-primary-fixed transition-all flex items-center justify-between shadow-xs hover:bg-surface-container">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">volunteer_activism</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm">My Grandparent</h3>
+<p class="text-xs text-on-surface-variant peer-checked:text-on-primary-fixed">Warm social engagement and memory sharing</p>
+</div>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest flex items-center justify-center text-transparent peer-checked:text-on-primary peer-checked:bg-primary-container">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+</div>
+</label>
+<!-- Option: Someone else -->
+<label class="cursor-pointer group">
+<input class="peer sr-only" name="recipient" type="radio" value="someone_else"/>
+<div class="min-h-[88px] p-5 rounded-2xl bg-surface-container-low peer-checked:bg-primary-fixed peer-checked:text-on-primary-fixed transition-all flex items-center justify-between shadow-xs hover:bg-surface-container">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">group</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm">A Relative or Close Friend</h3>
+<p class="text-xs text-on-surface-variant peer-checked:text-on-primary-fixed">Arranging compassionate visits on their behalf</p>
+</div>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest flex items-center justify-center text-transparent peer-checked:text-on-primary peer-checked:bg-primary-container">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+</div>
+</label>
+</div>
+<!-- Gentle Helper Note -->
+<div class="bg-surface-container p-4 rounded-xl flex items-start gap-3 mt-2">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">sentiment_satisfied</span>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+              We never share your details without consent. You will have the opportunity to arrange an introductory phone call before any in-home visit takes place.
+            </p>
+</div>
+</div>
+<!-- STEP 2: ACTIVITIES & INTERESTS -->
+<div class="wizard-step hidden flex flex-col gap-6" id="step-2">
+<div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+              Select all activities they would enjoy during visits. You can select as many as you wish.
+            </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+<!-- Activity 1 -->
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" type="checkbox"/>
+<div class="min-h-[64px] p-4 rounded-xl bg-surface-container-low peer-checked:bg-secondary-container peer-checked:text-on-secondary-container transition-all flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">forum</span>
+<span class="font-label-md text-label-md">Conversation &amp; Tea</span>
+</div>
+</label>
+<!-- Activity 2 -->
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" type="checkbox"/>
+<div class="min-h-[64px] p-4 rounded-xl bg-surface-container-low peer-checked:bg-secondary-container peer-checked:text-on-secondary-container transition-all flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">directions_walk</span>
+<span class="font-label-md text-label-md">Walks &amp; Fresh Air</span>
+</div>
+</label>
+<!-- Activity 3 -->
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" type="checkbox"/>
+<div class="min-h-[64px] p-4 rounded-xl bg-surface-container-low peer-checked:bg-secondary-container peer-checked:text-on-secondary-container transition-all flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">history_edu</span>
+<span class="font-label-md text-label-md">Life Stories &amp; Photos</span>
+</div>
+</label>
+<!-- Activity 4 -->
+<label class="cursor-pointer">
+<input class="peer sr-only" type="checkbox"/>
+<div class="min-h-[64px] p-4 rounded-xl bg-surface-container-low peer-checked:bg-secondary-container peer-checked:text-on-secondary-container transition-all flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">casino</span>
+<span class="font-label-md text-label-md">Board Games &amp; Cards</span>
+</div>
+</label>
+<!-- Activity 5 -->
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" type="checkbox"/>
+<div class="min-h-[64px] p-4 rounded-xl bg-surface-container-low peer-checked:bg-secondary-container peer-checked:text-on-secondary-container transition-all flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">devices</span>
+<span class="font-label-md text-label-md">Phone &amp; Tablet Help</span>
+</div>
+</label>
+<!-- Activity 6 -->
+<label class="cursor-pointer">
+<input class="peer sr-only" type="checkbox"/>
+<div class="min-h-[64px] p-4 rounded-xl bg-surface-container-low peer-checked:bg-secondary-container peer-checked:text-on-secondary-container transition-all flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">local_mall</span>
+<span class="font-label-md text-label-md">Shopping &amp; Errands</span>
+</div>
+</label>
+<!-- Activity 7 -->
+<label class="cursor-pointer">
+<input class="peer sr-only" type="checkbox"/>
+<div class="min-h-[64px] p-4 rounded-xl bg-surface-container-low peer-checked:bg-secondary-container peer-checked:text-on-secondary-container transition-all flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">menu_book</span>
+<span class="font-label-md text-label-md">Reading Aloud</span>
+</div>
+</label>
+<!-- Activity 8 -->
+<label class="cursor-pointer">
+<input class="peer sr-only" type="checkbox"/>
+<div class="min-h-[64px] p-4 rounded-xl bg-surface-container-low peer-checked:bg-secondary-container peer-checked:text-on-secondary-container transition-all flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">potted_plant</span>
+<span class="font-label-md text-label-md">Gardening &amp; Plant Care</span>
+</div>
+</label>
+<!-- Activity 9 -->
+<label class="cursor-pointer">
+<input class="peer sr-only" type="checkbox"/>
+<div class="min-h-[64px] p-4 rounded-xl bg-surface-container-low peer-checked:bg-secondary-container peer-checked:text-on-secondary-container transition-all flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">palette</span>
+<span class="font-label-md text-label-md">Arts, Crafts &amp; Music</span>
+</div>
+</label>
+</div>
+</div>
+<!-- STEP 3: SCHEDULE PREFERENCES -->
+<div class="wizard-step hidden flex flex-col gap-6" id="step-3">
+<div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+              Select ideal dates and preferred parts of the day. Our companions adapt around regular routines.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Date Picker Card -->
+<div class="bg-surface-container-low p-6 rounded-2xl">
+<label class="font-label-md text-label-md text-on-surface block mb-3">Preferred First Visit Date</label>
+<input class="w-full h-14 px-4 rounded-xl bg-surface-container-lowest text-on-surface font-body-md focus:outline-none focus:ring-2 focus:ring-primary-container" type="date" value="2025-04-10"/>
+<p class="font-body-md text-xs text-on-surface-variant mt-2">Bookings can be rescheduled with 24 hours notice at no fee.</p>
+<div class="mt-6">
+<label class="font-label-md text-label-md text-on-surface block mb-3">Adelaide Suburb / Postcode</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-4 text-on-surface-variant">location_on</span>
+<input class="w-full h-14 pl-12 pr-4 rounded-xl bg-surface-container-lowest text-on-surface font-body-md focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="e.g. Unley, North Adelaide, 5000" type="text" value="Norwood 5067, Adelaide"/>
+</div>
+</div>
+</div>
+<!-- Time of Day Radios -->
+<div class="flex flex-col gap-3">
+<label class="font-label-md text-label-md text-on-surface block mb-1">Preferred Time of Day</label>
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="time_pref" type="radio" value="morning"/>
+<div class="h-16 p-4 rounded-xl bg-surface-container-low peer-checked:bg-primary-fixed peer-checked:text-on-primary-fixed flex items-center justify-between transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">wb_twilight</span>
+<div>
+<span class="font-label-md text-label-md block">Morning</span>
+<span class="text-xs text-on-surface-variant peer-checked:text-on-primary-fixed">9:00 AM – 12:00 PM</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] opacity-0 peer-checked:opacity-100">check</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="time_pref" type="radio" value="afternoon"/>
+<div class="h-16 p-4 rounded-xl bg-surface-container-low peer-checked:bg-primary-fixed peer-checked:text-on-primary-fixed flex items-center justify-between transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">light_mode</span>
+<div>
+<span class="font-label-md text-label-md block">Afternoon</span>
+<span class="text-xs text-on-surface-variant peer-checked:text-on-primary-fixed">1:00 PM – 4:00 PM</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] opacity-0 peer-checked:opacity-100">check</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="time_pref" type="radio" value="flexible"/>
+<div class="h-16 p-4 rounded-xl bg-surface-container-low peer-checked:bg-primary-fixed peer-checked:text-on-primary-fixed flex items-center justify-between transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<div>
+<span class="font-label-md text-label-md block">Flexible / Any Time</span>
+<span class="text-xs text-on-surface-variant peer-checked:text-on-primary-fixed">Companion matches based on best mutual fit</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] opacity-0 peer-checked:opacity-100">check</span>
+</div>
+</label>
+</div>
+</div>
+</div>
+<!-- STEP 4: FREQUENCY -->
+<div class="wizard-step hidden flex flex-col gap-6" id="step-4">
+<div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+              How often would companionship visits be most helpful? Ongoing visits ensure lasting friendships.
+            </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Frequency 1 -->
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="frequency" type="radio" value="weekly"/>
+<div class="p-6 rounded-2xl bg-surface-container-low peer-checked:bg-secondary-container peer-checked:text-on-secondary-container transition-all flex flex-col justify-between h-44 shadow-xs">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[32px] text-secondary">event_repeat</span>
+<span class="font-label-sm text-xs px-2.5 py-1 rounded-full bg-surface-container-lowest text-on-surface">Most Popular</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm">Weekly Visits</h3>
+<p class="font-body-md text-sm text-on-surface-variant mt-1">A regular weekly companion visit builds authentic, enduring rapport.</p>
+</div>
+</div>
+</label>
+<!-- Frequency 2 -->
+<label class="cursor-pointer">
+<input class="peer sr-only" name="frequency" type="radio" value="fortnightly"/>
+<div class="p-6 rounded-2xl bg-surface-container-low peer-checked:bg-secondary-container peer-checked:text-on-secondary-container transition-all flex flex-col justify-between h-44 shadow-xs">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[32px] text-secondary">calendar_view_week</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm">Fortnightly Visits</h3>
+<p class="font-body-md text-sm text-on-surface-variant mt-1">Every two weeks for outings, errands, and catching up on projects.</p>
+</div>
+</div>
+</label>
+<!-- Frequency 3 -->
+<label class="cursor-pointer">
+<input class="peer sr-only" name="frequency" type="radio" value="multiple"/>
+<div class="p-6 rounded-2xl bg-surface-container-low peer-checked:bg-secondary-container peer-checked:text-on-secondary-container transition-all flex flex-col justify-between h-44 shadow-xs">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[32px] text-secondary">all_inclusive</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm">Multiple Times Per Week</h3>
+<p class="font-body-md text-sm text-on-surface-variant mt-1">2 to 3 days a week for active companionship and dedicated walks.</p>
+</div>
+</div>
+</label>
+<!-- Frequency 4 -->
+<label class="cursor-pointer">
+<input class="peer sr-only" name="frequency" type="radio" value="onetime"/>
+<div class="p-6 rounded-2xl bg-surface-container-low peer-checked:bg-secondary-container peer-checked:text-on-secondary-container transition-all flex flex-col justify-between h-44 shadow-xs">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[32px] text-secondary">looks_one</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm">Single Introductory Visit</h3>
+<p class="font-body-md text-sm text-on-surface-variant mt-1">Start with an easy one-time visit to try the experience first.</p>
+</div>
+</div>
+</label>
+</div>
+</div>
+<!-- STEP 5: TELL US ABOUT THEM -->
+<div class="wizard-step hidden flex flex-col gap-6" id="step-5">
+<div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+              A few human touches help our Adelaide team pinpoint someone with matching interests and personality.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="font-label-md text-label-md text-on-surface block mb-2">Their Name (or Nickname)</label>
+<input class="w-full h-14 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-md focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="e.g. Arthur" type="text" value="Arthur &amp; Margaret Jenkins"/>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface block mb-2">Their Age Bracket</label>
+<select class="w-full h-14 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-md focus:outline-none focus:ring-2 focus:ring-primary-container">
+<option>65 - 74 years old</option>
+<option selected="">75 - 84 years old</option>
+<option>85+ years old</option>
+</select>
+</div>
+<div class="md:col-span-2">
+<label class="font-label-md text-label-md text-on-surface block mb-2">Passions, Hobbies &amp; Life Background</label>
+<textarea class="w-full p-4 rounded-xl bg-surface-container-low text-on-surface font-body-md focus:outline-none focus:ring-2 focus:ring-primary-container" rows="3">Arthur was a landscape architect in the Adelaide Hills and loves Australian native flora and photography. Margaret enjoys classical music, old cinema, and morning tea conversations.</textarea>
+<p class="text-xs text-on-surface-variant mt-1">Mentioning their favorite topics sparks instant connection from the very first visit.</p>
+</div>
+<div class="md:col-span-2">
+<label class="font-label-md text-label-md text-on-surface block mb-2">Mobility &amp; Physical Considerations</label>
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 rounded-xl bg-surface-container text-on-surface text-sm font-label-sm flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-secondary">check</span>Uses walking frame</span>
+<span class="px-4 py-2 rounded-xl bg-surface-container text-on-surface text-sm font-label-sm flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-secondary">check</span>Enjoys level garden strolls</span>
+<span class="px-4 py-2 rounded-xl bg-surface-container text-on-surface text-sm font-label-sm flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-secondary">check</span>Hearing aid user (clear speech appreciated)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- STEP 6: AUTOMATIC COMPANION MATCH -->
+<div class="wizard-step hidden flex flex-col gap-6" id="step-6">
+  <div class="pb-4 border-b border-surface-container-high">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-xs mb-2"><span class="material-symbols-outlined text-[16px]">near_me</span><span>Matched for you</span></div>
+    <h3 class="font-headline-md text-headline-md text-on-surface">Your EverKind companion match</h3>
+    <p class="font-body-md text-body-md text-on-surface-variant mt-2">We match you with one available companion using nearby location, availability, relevant skills and member ratings. You can request a different match at any time.</p>
+  </div>
+  <article class="bg-surface-container-low rounded-2xl p-6 md:p-8 flex flex-col lg:flex-row items-start lg:items-center gap-7 shadow-md">
+    <div class="relative shrink-0 mx-auto lg:mx-0"><img alt="Sarah, your suggested EverKind companion" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-2xl shadow-sm" src="https://images.pexels.com/photos/7089170/pexels-photo-7089170.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"/><span class="absolute -bottom-3 -right-3 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-xs flex items-center gap-1 shadow-sm"><span class="material-symbols-outlined text-[16px]">verified</span>Best fit</span></div>
+    <div class="flex-1 w-full"><div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3"><div><h4 class="font-headline-lg text-headline-lg text-on-surface leading-tight">Sarah Wilson</h4><p class="font-body-md text-body-md text-on-surface-variant">Available Tuesday morning · 4 years’ experience</p></div><div class="flex items-center gap-1.5 bg-surface-container-lowest px-3 py-1.5 rounded-xl shadow-xs self-start"><span class="material-symbols-outlined text-tertiary-container text-[20px]" style="font-variation-settings:'FILL' 1">star</span><span class="font-label-lg text-label-lg font-bold text-on-surface">5.0</span><span class="text-xs text-on-surface-variant">(38 reviews)</span></div></div>
+      <p class="font-body-md text-body-md text-on-surface mt-4 leading-relaxed">Sarah enjoys local garden strolls, conversation and preserving family stories — a strong fit for the interests and visit details you shared.</p>
+      <div class="grid sm:grid-cols-3 gap-3 mt-5"><div class="rounded-xl bg-surface-container-lowest p-3"><span class="text-xs text-on-surface-variant block">Location</span><strong class="text-sm text-on-surface">About 5 km away</strong></div><div class="rounded-xl bg-surface-container-lowest p-3"><span class="text-xs text-on-surface-variant block">Availability</span><strong class="text-sm text-on-surface">Matches your schedule</strong></div><div class="rounded-xl bg-surface-container-lowest p-3"><span class="text-xs text-on-surface-variant block">Skills &amp; rating</span><strong class="text-sm text-on-surface">Storytelling · 5.0 ★</strong></div></div>
+      <div class="flex flex-col sm:flex-row sm:items-center gap-3 mt-6"><button class="min-h-[46px] px-5 py-2 rounded-xl border border-primary/30 text-primary hover:bg-surface-container-lowest font-label-md text-sm transition-colors" type="button" onclick="openChangeMatch()">Request a different companion</button><span class="text-xs text-on-surface-variant">We’ll use your reason to find a better fit.</span></div>
+    </div>
+  </article>
+  <div class="bg-secondary-container/50 p-4 rounded-xl flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[24px]">verified</span><p class="font-body-md text-sm text-on-surface"><strong>Need a change later?</strong> Your coordinator can help rematch you if the first visit doesn’t feel right.</p></div>
+  <div id="match-request-status" class="hidden rounded-xl bg-surface-container p-4 text-sm text-on-surface" role="status" aria-live="polite"></div>
+</div>
+<!-- Change companion request dialog -->
+<div id="change-match-modal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/50 p-4" role="dialog" aria-modal="true" aria-labelledby="change-match-title">
+  <div class="w-full max-w-lg rounded-3xl bg-background p-6 md:p-8 shadow-2xl"><div class="flex items-start justify-between gap-4"><div><p class="text-xs font-bold uppercase tracking-wider text-secondary">Companion match</p><h3 id="change-match-title" class="font-headline-md text-2xl text-on-surface mt-1">What would you like to change?</h3><p class="text-sm text-on-surface-variant mt-2">Tell us what matters and we’ll look for another suitable match.</p></div><button type="button" class="rounded-full p-2 text-on-surface-variant hover:bg-surface-container" aria-label="Close dialog" onclick="closeChangeMatch()">✕</button></div>
+    <form id="change-match-form" class="mt-5"><fieldset><legend class="text-sm font-semibold text-on-surface mb-3">Reason for your request</legend><div class="space-y-2">
+      <label class="flex gap-3 rounded-xl border border-outline-variant p-3 cursor-pointer"><input required type="radio" name="changeReason" value="higher rating"/><span class="text-sm text-on-surface">I’d like someone with a higher rating</span></label>
+      <label class="flex gap-3 rounded-xl border border-outline-variant p-3 cursor-pointer"><input type="radio" name="changeReason" value="male companion"/><span class="text-sm text-on-surface">I need a male companion</span></label>
+      <label class="flex gap-3 rounded-xl border border-outline-variant p-3 cursor-pointer"><input type="radio" name="changeReason" value="female companion"/><span class="text-sm text-on-surface">I need a female companion</span></label>
+      <label class="flex gap-3 rounded-xl border border-outline-variant p-3 cursor-pointer"><input type="radio" name="changeReason" value="location too far"/><span class="text-sm text-on-surface">The location is too far</span></label>
+      <label class="flex gap-3 rounded-xl border border-outline-variant p-3 cursor-pointer"><input type="radio" name="changeReason" value="other"/><span class="text-sm text-on-surface">Other</span></label>
+    </div></fieldset><label id="other-reason-wrap" class="hidden mt-4 text-sm font-semibold text-on-surface">Tell us a little more<textarea name="otherReason" rows="3" class="mt-2 w-full rounded-xl border border-outline-variant bg-surface-container-lowest p-3 font-normal" placeholder="What would make a better match?"></textarea></label><div class="flex flex-col-reverse sm:flex-row justify-end gap-3 mt-6"><button type="button" class="min-h-[46px] px-5 rounded-xl text-on-surface hover:bg-surface-container font-semibold" onclick="closeChangeMatch()">Keep this match</button><button type="submit" class="min-h-[46px] px-5 rounded-xl bg-primary-container text-on-primary font-semibold hover:bg-primary">Request a new match</button></div></form>
+  </div>
+</div>
+<!-- Wizard Navigation Footer Controls -->
+<div class="flex items-center justify-between pt-8 mt-8 border-t border-surface-container-high">
+<button class="min-h-[52px] px-6 py-2.5 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors flex items-center gap-2 opacity-50 cursor-not-allowed" disabled="" id="btn-prev" onclick="navigateStep(-1)" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span>Previous Step</span>
+</button>
+<div class="flex items-center gap-4">
+<span class="hidden sm:inline-block font-label-sm text-xs text-on-surface-variant">
+              No credit card required
+            </span>
+<button class="min-h-[56px] px-8 py-3 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-xl shadow-md hover:bg-primary transition-all flex items-center justify-center gap-2" id="btn-next" onclick="navigateStep(1)" type="button">
+<span id="btn-next-label">Continue to Step 2</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Client-side Stepper Logic -->
+<script>
+    let currentStep = 1;
+    const totalSteps = 6;
+
+    const titles = [
+      "Who is this visit for?",
+      "What would they enjoy?",
+      "When would they like company?",
+      "How often should visits occur?",
+      "Tell us about their background",
+      "Your Automatic Companion Match"
+    ];
+
+    function updateStepUI() {
+      // Toggle views
+      for (let i = 1; i <= totalSteps; i++) {
+        const el = document.getElementById('step-' + i);
+        if (el) {
+          if (i === currentStep) {
+            el.classList.remove('hidden');
+          } else {
+            el.classList.add('hidden');
+          }
+        }
+      }
+
+      // Update Text & Indicators
+      const eyebrow = document.getElementById('step-eyebrow');
+      const titleDisplay = document.getElementById('step-title-display');
+      const bar = document.getElementById('step-progress-bar');
+      const prevBtn = document.getElementById('btn-prev');
+      const nextBtnLabel = document.getElementById('btn-next-label');
+
+      if (eyebrow) eyebrow.textContent = 'Step ' + currentStep + ' of ' + totalSteps;
+      if (titleDisplay) titleDisplay.textContent = titles[currentStep - 1];
+      if (bar) bar.style.width = (currentStep / totalSteps * 100) + '%';
+
+      // Previous button state
+      if (currentStep === 1) {
+        prevBtn.disabled = true;
+        prevBtn.classList.add('opacity-50', 'cursor-not-allowed');
+      } else {
+        prevBtn.disabled = false;
+        prevBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+      }
+
+      // Next button text
+      if (currentStep === totalSteps) {
+        nextBtnLabel.textContent = 'Request a free match call';
+      } else {
+        nextBtnLabel.textContent = 'Continue to Step ' + (currentStep + 1);
+      }
+
+      // Smooth scroll to card top on mobile
+      const wizardTop = document.getElementById('step-title-display');
+      if (wizardTop && window.innerWidth < 768) {
+        wizardTop.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+
+    function navigateStep(direction) {
+      if (direction === 1 && currentStep === totalSteps) {
+        alert('Thank you! Your free match call request is ready. Our Adelaide coordinator will be in touch to confirm your companion match.');
+        return;
+      }
+      currentStep += direction;
+      if (currentStep < 1) currentStep = 1;
+      if (currentStep > totalSteps) currentStep = totalSteps;
+      updateStepUI();
+    }
+
+    function goToStep(step) {
+      currentStep = step;
+      updateStepUI();
+    }
+    function openChangeMatch() {
+      const modal = document.getElementById('change-match-modal');
+      modal.classList.remove('hidden'); modal.classList.add('flex');
+      modal.querySelector('input[type="radio"]').focus();
+    }
+    function closeChangeMatch() {
+      const modal = document.getElementById('change-match-modal');
+      modal.classList.add('hidden'); modal.classList.remove('flex');
+    }
+    document.querySelectorAll('input[name="changeReason"]').forEach(input => input.addEventListener('change', () => {
+      const other = document.getElementById('other-reason-wrap');
+      other.classList.toggle('hidden', input.value !== 'other' || !input.checked);
+      other.querySelector('textarea').required = input.value === 'other' && input.checked;
+    }));
+    document.getElementById('change-match-form').addEventListener('submit', event => {
+      event.preventDefault();
+      const data = new FormData(event.currentTarget);
+      const reason = data.get('changeReason');
+      const status = document.getElementById('match-request-status');
+      status.textContent = `Request noted: ${reason === 'other' ? data.get('otherReason') : reason}. Our coordinator will find another companion using your preferences.`;
+      status.classList.remove('hidden'); closeChangeMatch(); event.currentTarget.reset();
+      document.getElementById('other-reason-wrap').classList.add('hidden');
+    });
+    document.getElementById('change-match-modal').addEventListener('click', event => { if (event.target.id === 'change-match-modal') closeChangeMatch(); });
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') closeChangeMatch(); });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_8px_rgba(0,0,0,0.03)] mt-space-xl"><div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl"><div class="flex flex-col md:flex-row md:items-start justify-between gap-space-lg pb-space-lg mb-space-lg"><div class="max-w-md"><div class="flex items-center gap-space-xs mb-space-sm"><img alt="EverKind Brand Logo" class="h-8 w-auto object-contain" src="assets/everkind-logo.png"/></div><p class="font-headline-md-mobile text-headline-md-mobile text-on-surface mb-space-xs italic">Meaningful time. Human connection.</p><p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span>Proudly starting in South Australia (Adelaide)</p></div><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm text-secondary px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">verified</span>Vetted Companions</span><span class="font-label-sm text-label-sm text-secondary px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">security</span>Police Checked</span></div></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg pb-space-xl"><div class="flex flex-col gap-space-sm"><h3 class="font-label-lg text-label-lg text-on-surface">Companionship &amp; Services</h3><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="companionship" href="index.html#companionship">Conversation</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="companionship" href="index.html#companionship">Walks &amp; Outings</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="companionship" href="index.html#companionship">Everyday Help</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="companionship" href="index.html#companionship">Technology Support</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="life-stories" href="life-stories.html">Life Stories</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-label-lg text-label-lg text-on-surface">For Families</h3><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="for-families" href="family-dashboard.html">Peace of Mind</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="family-dashboard" href="family-dashboard.html">Family Dashboard</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="for-families" href="family-dashboard.html">Visit Updates</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="trust-safety" href="index.html#trust-safety">Trust &amp; Safety</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="pricing" href="life-stories.html#pricing-section">Pricing</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-label-lg text-label-lg text-on-surface">Companions</h3><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="become-a-companion" href="become-a-companion.html">Become a Companion</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="screening-process" href="index.html#trust-safety">Screening Process</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="login" href="family-dashboard.html">Companion Login</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="trust-safety" href="index.html#trust-safety">Safety Standards</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-label-lg text-label-lg text-on-surface">About &amp; Support</h3><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="about-us" href="index.html#about-us">Our Story</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="adelaide-community" href="index.html#about-us">Adelaide Community</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="faqs" href="index.html#faqs">FAQs</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="contact-us" href="mailto:hello@everkind.com.au">Contact Us</a></li><li class="min-h-[36px] flex items-center"><a class="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="accessibility" href="index.html#accessibility">Accessibility Commitment</a></li></ul></div></div><div class="bg-surface-container p-space-md rounded-xl mb-space-lg"><p class="font-body-md text-body-md text-on-surface-variant flex items-start gap-space-xs"><span class="material-symbols-outlined text-tertiary mt-0.5 shrink-0">info</span><span><strong>Important Care Notice:</strong> EverKind provides social companionship and practical everyday assistance, not clinical nursing or emergency medical care. In an emergency, please call 000 immediately.</span></p></div><div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pt-space-md text-on-surface-variant font-label-sm text-label-sm"><p>© 2025 EverKind Australia. All rights reserved.</p><div class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs"><a class="hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="privacy-policy" href="index.html#privacy-policy">Privacy Policy</a><a class="hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="terms-of-service" href="index.html#terms-of-service">Terms of Service</a><a class="hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded" data-path="complaints-feedback" href="mailto:hello@everkind.com.au?subject=Feedback%20for%20EverKind">Plain English Complaints &amp; Feedback</a></div></div></div></footer><script id="everkind-accessibility-controls">
+(()=>{
+  const root=document.documentElement;
+  let size=0;
+  try{size=Number(localStorage.getItem('everkind-text-size')||0)}catch{}
+  if(!Number.isInteger(size)||size<0||size>2)size=0;
+  const apply=()=>{
+    root.classList.toggle('ek-text-large',size===1);
+    root.classList.toggle('ek-text-larger',size===2);
+    document.querySelectorAll('[data-font-scale]').forEach(button=>{
+      button.setAttribute('aria-pressed',String(size>0));
+      button.setAttribute('aria-label',size===2?'Reset text size':'Increase text size');
+      const label=button.querySelector('.ek-a11y-label');
+      if(label)label.textContent=size===0?'Text size':size===1?'Larger text':'Reset text';
+      button.title=size===0?'Increase text size':size===1?'Increase text size again':'Restore default text size';
+    });
+  };
+  apply();
+  document.querySelectorAll('[data-font-scale]').forEach(button=>button.addEventListener('click',()=>{
+    size=(size+1)%3;apply();
+    try{localStorage.setItem('everkind-text-size',String(size))}catch{}
+  }));
+  const menu=document.querySelector('.ek-menu');
+  const nav=document.querySelector('.ek-nav');
+  if(menu&&nav)menu.addEventListener('click',()=>{
+    const open=nav.classList.toggle('is-open');
+    menu.setAttribute('aria-expanded',String(open));
+    menu.setAttribute('aria-label',open?'Close navigation':'Open navigation');
+    menu.querySelector('span').textContent=open?'×':'☰';
+  });
+})();
+</script>
+</body></html>
